@@ -5,18 +5,26 @@
 // Після того як користувач припинив введення натиснувши кнопку Cancel, показати alert з рядком 'Загальна сума чисел дорівнює [сума]'.
 //  Робити перевірку того, що користувач ввів саме число, а не довільний набір символів, не потрібно. Якщо хочеш, в разі некоректного введення, показуй alert з текстом 'Було написано не число, спробуйте ще раз', при цьому результат prompt плюсувати до загальної суми не потрібно, після чого знову користувачеві пропонується ввести число в prompt.
 
-// let input = Number(prompt("Уведіть число"));
-// let total = 0
 
-// // for (let i = 0; i > -1; i++) {
-// while (input !== null) {
-//     // if (input == null) {
-//     //     alert(`Загальна сума чисел дорівнює ${total}`)
-//     // } else {
-//     total += input
-//     input = Number(prompt("Уведіть число ще раз "));
+let input = prompt("Enter the number");
+let num = Number(input)
+let numbers = []
+let total = 0;
+numbers.push(num)
 
-//     // }
-// }
 
-// alert(`Загальна сума чисел дорівнює ${total}`)
+while (input != null) {
+    input = prompt("Enter the number");
+    num = Number(input)
+    numbers.push(num)
+
+}
+
+
+if (input == null) {
+    for (let i = 0; i < numbers.length; i += 1) {
+        total += numbers[i]
+
+    }
+    console.log(`Загальна сума чисел дорівнює ${total}`)
+}

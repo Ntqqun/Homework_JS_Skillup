@@ -15,8 +15,6 @@ function formatString(string) {
 
 
 
-
-
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
 // повернеться оригінальний рядок
 
