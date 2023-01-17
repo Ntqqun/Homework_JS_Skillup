@@ -2,22 +2,6 @@
 //  і повертає ціну гравіювання всіх слів в рядку.
 
 
-// let arr = str.split(" ")[1].split('')
-// console.log(arr.length)
-// console.log(str.split(" ").split('').length)
-// console.log(str.split(" ").length) // 3
-
-// let calculateEngravingPrice = function(message, pricePerWord) {
-//     for (let i = 0; i < message.split(" ").length; i += 1) {
-//         let sum = 0
-//         let pricePerLetter = message.split(" ")[i].length * pricePerWord
-//         sum += pricePerLetter;
-//     }
-//     console.log(sum);
-// };
-// // console.log(calculateEngravingPrice(str, price))
-// calculateEngravingPrice(str, price)
-
 
 let calculateEngravingPrice = function(message, pricePerWord) {
     let words = message.split(" ")

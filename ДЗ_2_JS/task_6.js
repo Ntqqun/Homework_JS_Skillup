@@ -15,7 +15,7 @@ numbers.push(num)
 
 
 function Suma() {
-    while (input != null) {
+    while (input) { // не робити input != null а робити input
         input = prompt("Enter the number");
         num = Number(input)
         numbers.push(num)
@@ -23,7 +23,7 @@ function Suma() {
     }
 
 
-    if (input == null) {
+    if (!input) { // не  робити input == null а робити !input
         for (let i = 0; i < numbers.length; i += 1) {
             total += numbers[i]
 
