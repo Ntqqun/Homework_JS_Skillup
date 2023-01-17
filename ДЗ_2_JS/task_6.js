@@ -14,18 +14,22 @@ let total = 0;
 numbers.push(num)
 
 
-while (input != null) {
-    input = prompt("Enter the number");
-    num = Number(input)
-    numbers.push(num)
-
-}
-
-
-if (input == null) {
-    for (let i = 0; i < numbers.length; i += 1) {
-        total += numbers[i]
+function Suma() {
+    while (input != null) {
+        input = prompt("Enter the number");
+        num = Number(input)
+        numbers.push(num)
 
     }
-    console.log(`Загальна сума чисел дорівнює ${total}`)
+
+
+    if (input == null) {
+        for (let i = 0; i < numbers.length; i += 1) {
+            total += numbers[i]
+
+        }
+        console.log(`Загальна сума чисел дорівнює ${total}`)
+    }
 }
+
+Suma()
